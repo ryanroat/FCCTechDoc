@@ -50,12 +50,17 @@ html {
   }
   
   body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    color: var(--clr-accent3);
     margin: 1.25rem;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    background: #666; /* base background to dim bg image */
+    background-image: url('./dnd.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
   }
 
 /* buttons */
@@ -70,13 +75,12 @@ html {
     text-align: center;
     /* position: sticky; */
     top: 0;
-    background: #fff;
+    /* background: #fff; */
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
 }
 
 #navbar {
@@ -92,10 +96,11 @@ html {
     visibility: hidden;
 }
 
-.nav-link {
+.nav-link, .home-link {
     padding: 0 .5rem;
     text-decoration: none;
     text-align: center;
+    color: var(--clr-accent3);
 }
 
 .main-section header {
@@ -123,7 +128,7 @@ html {
         visibility: visible;
     }
 
-    .nav-link {
+    .nav-link, .home-link {
         padding: .25rem 0;
 
     }
