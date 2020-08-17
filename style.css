@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* custom properties */
+
+:root {
+    --ff-primary: "Source Sans Pro", sans-serif;
+    --ff-secondary: "Source Code Pro", monospace;
+  
+    --fw-reg: 300;
+    --fw-bold: 900;
+  
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent1: #457b9d;
+    --clr-accent2: #a8dadc;
+    --clr-accent3: #f1faee;
+  
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --fs-logo: 3.5rem;
+  
+  /* box shadow props */
+  
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+      0.125em 00.125em 00.25em rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (min-width: 800px) {
+    :root {
+      --fs-h1: 4.5rem;
+      --fs-h2: 3.75rem;
+      --fs-h3: 1.5rem;
+      --fs-body: 1.125rem;
+      --fs-logo: 4rem;
+    }
+  }
+
+/* box shadow props */
+
+/* general styles */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+  }
+
+/* buttons */
+
+/* typography */
+
+/* body sections */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 800px) {
+    .container {
+        flex-direction: row;
+    }
+}
