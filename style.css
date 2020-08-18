@@ -47,6 +47,7 @@
 
 html {
     scroll-behavior: smooth;
+    color: var(--clr-accent3)
   }
   
   body {
@@ -61,6 +62,16 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  li {
+      text-align: center;
+      font-size: var(--fs-h3);
+      font-weight: var(--fw-bold);
   }
 
 /* buttons */
@@ -103,6 +114,10 @@ html {
     color: var(--clr-accent3);
 }
 
+.home-link {
+    display: none;
+}
+
 .main-section header {
     font-size: var(--fs-h2);
     text-align: center;
@@ -126,6 +141,10 @@ html {
 
     #navbar header {
         visibility: visible;
+    }
+
+    .home-link {
+        display: initial;
     }
 
     .nav-link, .home-link {
