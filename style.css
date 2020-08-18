@@ -74,6 +74,10 @@ html {
       font-weight: var(--fw-bold);
   }
 
+  #d20 {
+      text-align: center;
+  }
+
 /* buttons */
 
 /* typography */
